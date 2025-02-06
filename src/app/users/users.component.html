@@ -1,0 +1,11 @@
+<h1 #title>Users</h1>
+
+@defer (on hover) {
+  <app-large-component></app-large-component>
+} @loading {
+  <p>loading....</p>
+} @placeholder (minimum 1000) {
+  <p test-id="placeholder">Hover me to load content</p>
+} @error {
+  <p>Failed to load large component.</p>
+}
